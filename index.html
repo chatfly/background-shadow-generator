@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow Generator</title>
+    <link rel="stylesheet" href="src/Estilo/style.css">
+</head>
+<body>
+    <h1>Gerador de box-shadow para CSS</h1>
+    <div id="caixa">
+    </div>
+    <main>
+        <div class="main__ranges">
+            <section>
+                <div class="divrow">
+                    <p>Horizontal:</p>
+                    <p class="horizontal">0</p>
+                </div>
+                <input type="range" value="0" min="-100" max="100" class="inputhorizontal">
+            </section>
+            <section>
+                <div class="divrow">
+                    <p>Vertical: </p>
+                    <p class="vertical">0</p>
+                </div>
+                <input type="range" value="0" min="-100" max="100" class="inputvertical">
+            </section>
+            <section>
+                <div class="divrow">
+                    <p>Blur: </p>
+                    <p class="blur">10</p>
+                </div>
+                <input type="range" value="10" min="0" max="100" class="inputblur">
+            </section>
+            <section>
+                <div class="divrow">
+                    <p>Spread:</p>
+                    <p class="spread">0</p>
+                </div>
+                <input type="range" value="0" min="-100" max="100" class="inputspread">
+            </section>
+            <section class="insetcolor">
+                <div>
+                    <p>Inset:</p>
+                    <input type="button" value="on/off" class="inputcheck" onclick="checkFuncao()">
+                </div>
+                <input type="color" onchange="principalFuncao()" class="color">
+            </section>
+        </div>
+    </main>
+    <script src="src/Script/js/script.js"></script>
+</body>
+</html>

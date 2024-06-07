@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+    flex-direction: column;
+    font-family: 'JetBrains Mono', sans-serif;
+}
+
+main{
+    margin-top: 35px;
+}
+
+#caixa{
+    background-color: white;
+    border-radius: 8px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+p{
+    margin: 0;
+    margin: 5px;
+}
+
+.inputcheck{
+    padding: 12px 24px;
+    background-color: rgb(203, 181, 253);
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.inputcheck:hover{
+    background-color: blueviolet;
+}
+
+.color{
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 0;
+    border-width: 4px;
+    border-color: purple;
+}
+
+.color:hover{
+    border-color: black;
+}
+
+.insetcolor{
+    display: flex;
+    flex-direction: row;
+}
